@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let user = {
+            username: 'Luke',
+            password: 'password1987'
+        }
+
+        let database = [
+            {
+                username: 'Luke',
+                password: 'password1987'
+            },
+            {
+                username: 'Jim',
+                password: 'ilovepam'
+            },
+            {
+                username: 'Rick',
+                password: 'secret'
+            }
+        ];
+
+        let newsfeed = [
+            {
+                username: 'Bob',
+                timeline: 'I\'m bored'
+
+            },
+            {
+                username: 'Jill',
+                timeline: 'I\'m tired'
+
+            },
+            {
+                username: 'Fred',
+                timeline: 'I\'m hungry'
+
+            }
+        ];
+
+        let userNamePrompt = prompt('What is your username?');
+        let userPassword = prompt('What is your password?');
+
+        function signIn(userNamePrompt, userPassword) {
+            if (userNamePrompt === database[0].username && userPassword === database[0].password) {
+                console.log(newsfeed);
+            }
+            else {
+                alert('Sorry, your username or password is incorrect.');
+            }
+        }
+
+        signIn(userNamePrompt, userPassword);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
